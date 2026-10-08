@@ -1,0 +1,22 @@
+/* Semantic error palette, with readable text on explicit surfaces in both themes. */
+:root{--error-text:#ff9c9c;--error-border:#ff6d79;--error-bg:#260f12;--incomplete-text:#ffda86;--incomplete-bg:#292011}
+:root[data-theme=light]{--error-text:#9f162b;--error-border:#b91c35;--error-bg:#fff0f2;--incomplete-text:#714600;--incomplete-bg:#fff5d6}
+:root :is(.feedback:not(.good),.error-message,.warning,[role=alert],.explanation-assessment.incorrect){color:var(--error-text);background:var(--error-bg);border-color:var(--error-border);border-left:5px solid var(--error-border)}
+:root :is(.feedback:not(.good),.error-message,.warning,[role=alert],.explanation-assessment.incorrect) :is(p,strong,small,span,h3,li,blockquote,svg){color:var(--error-text)}
+:root :is(.choice.incorrect,.choice.selected.incorrect,.choice.selected.incorrect:disabled){color:var(--error-text);background:var(--error-bg);border-color:var(--error-border);box-shadow:inset 6px 0 var(--error-border)}
+:root .choice.incorrect :is(.choice-letter,.answer-selection,svg,span){color:var(--error-text);border-color:var(--error-border);background:transparent}
+:root .warning-output,:root .warning-output+small,:root .error-text,:root .error-text *{color:var(--error-text)}
+:root :is(input,select,textarea):user-invalid{border-color:var(--error-border)!important;outline-color:var(--error-border)}
+.error-message{padding:18px;line-height:1.8}.error-text{padding:8px 0}
+:root .result-panel.result-failed :is(h2,.result-score,.result-medal,p){color:var(--error-text)}
+:root .result-panel.result-failed .result-medal{background:var(--error-bg);border-color:var(--error-border)}
+.explanation-criteria{margin:20px 0;padding:14px;border:2px solid var(--line);background:var(--terminal-panel)}
+.explanation-criteria summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:700}
+.explanation-assessment{margin:20px 0;padding:20px;border:2px solid var(--acid);border-left-width:5px;background:var(--terminal-panel);overflow-wrap:anywhere}
+.explanation-assessment h3{display:flex;align-items:center;gap:10px;line-height:1.6;margin-top:0}.explanation-assessment h3 svg{flex-shrink:0}
+.explanation-assessment.correct h3,.criterion-met{color:var(--acid)}
+.explanation-assessment.incomplete{border-color:var(--incomplete-text);background:var(--incomplete-bg)}
+.explanation-assessment.incomplete :is(h3,p,li,strong){color:var(--incomplete-text)}
+.explanation-assessment li{margin:12px 0;line-height:1.8}.explanation-assessment blockquote{margin:16px 0;padding:12px;border-left:3px solid currentColor;font-style:italic}
+@media(max-width:640px){.explanation-assessment{padding:14px}.explanation-assessment ul{padding-left:22px}}
+@media(forced-colors:active){:root :is(.feedback:not(.good),.error-message,.warning,[role=alert],.explanation-assessment,.choice.incorrect){background:Canvas;color:CanvasText;border-color:CanvasText}:root :is(.feedback:not(.good),.explanation-assessment,.choice.incorrect) *{color:CanvasText}}

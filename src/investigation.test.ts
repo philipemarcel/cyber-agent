@@ -1,0 +1,11 @@
+import { describe, it, expect } from 'vitest';
+import { evidence, utcTime, ordered, exactEvidence, evidenceTask, investigationScore } from './investigation';
+import { initial, normalizeSave, reward } from './core';
+import { canStudyChallenge, lessonMission } from './lessons';
+describe('evidence investigation',()=>{
+ it('orders by absolute time across offsets, without changing original marks',()=>{expect(ordered(['e4','e3','e2'])).toEqual(['e2','e3','e4']);expect(new Date(utcTime(evidence[0])).toISOString()).toBe('2026-10-06T12:00:00.000Z');expect(evidence[0].time).toBe('09:00:00-03:00');expect(ordered(['e5','e2','e3'])).toEqual(['e2','e5','e3'])});
+ it('requires all requested clues without unrelated records or duplicates',()=>{const task=evidenceTask('hard');expect(task.required.every(id=>evidence.find(e=>e.id===id)?.session===task.session)).toBe(true);expect(exactEvidence(['e4','e2','e3'],task.required)).toBe(true);for(const ids of [['e2','e3'],['e2','e3','e4','e5'],['e2','e2','e3']])expect(exactEvidence(ids,task.required)).toBe(false);expect(evidenceTask('easy').required).toEqual(['e2','e3'])});
+ it('scores incomplete reasoning below approval',()=>{expect(investigationScore([true,true,false,true])).toBe(75);expect(investigationScore([true,false,true])).toBe(67);expect(investigationScore([])).toBe(0)});
+ it('requires earlier common-core completion and gates reinforcement separately',()=>{expect(canStudyChallenge('m16',{},false)).toBe(false);expect(canStudyChallenge('m16',{m15:70},false)).toBe(true);expect(canStudyChallenge('m16',{},true)).toBe(true);expect(canStudyChallenge('m16',{m15:100},true,true)).toBe(false);for(const id of ['m16','s16a','s16b'])expect(lessonMission(id)).toBe('m16')});
+ it('migrates v10 and keeps best rewards without paying failed attempts',()=>{const old={...reward(initial,'m15',100,'hard',false),version:10,avatar:3,lang:'en',placement:true};let save=normalizeSave(old)!;expect(save).toEqual({...old,version:21});save=reward(save,'m16',75,'easy',false);save=reward(save,'m16',100,'hard',false);expect(save.xp).toBe(400);expect(reward(save,'s16b',67,'hard',true)).toEqual(save);expect(normalizeSave({...save,version:10})).toBeNull();expect(normalizeSave(save)).toEqual(save)});
+});
