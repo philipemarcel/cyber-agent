@@ -1,11 +1,13 @@
 # Roadmap — CYBER//AGENT
 
-Atualizado em 07/10/2026. Referência da entrega 0.29.0. Este roteiro substitui os estados antigos de M0–M3/v2/v3 do documento inicial; mantém o escopo original e registra a ordem atual de desenvolvimento. Datas de etapas futuras ainda não foram definidas.
+Atualizado em 08/10/2026. Referência da entrega 0.30.0. Este roteiro substitui os estados antigos de M0–M3/v2/v3 do documento inicial; mantém o escopo original e registra a ordem atual de desenvolvimento. Datas de etapas futuras ainda não foram definidas.
 
 ## Entregas e próximos marcos
 
 | Marco | Estado | Escopo e evidência |
 |---|---|---|
+| Dificuldade contextual | Implementado na 0.30.0 | Preferência salva; análise contextual nos níveis superiores das 24 missões, 48 reforços e dois minigames. 26 casos avançados próprios, decisão e justificativa, revisão por nível, pontuação 50/50 e aprovação da análise exigida. Tutoriais e relatório atualizados. Bancadas existentes preservadas; ver difficulty.md. |
+| Upload ao GitHub | Atualizado na 0.30.0 | Cópia sincronizada, base /cyber-agent/, arte/roadmap compatíveis, workflow npm ci/test/build/Pages e ZIP sem dependências ou credenciais. |
 | Visual e acessibilidade | Revisado na 0.25.0 | Verde/preto/cinza escuro; contraste medido, textos maiores, foco, salto ao conteúdo, navegação acessível e reflow. Textos cinza convertidos para branco na 0.24.1. Temas claro/escuro na 0.25.0, preferência salva e contraste conferido nas 24 aulas e nos minigames. Seleção explícita das respostas na 0.25.1, com texto e marcador. Ver accessibility.md; não representa certificação WCAG completa. |
 | Validação de respostas abertas e erros | Ampliado na 0.28.0 | Todas as 98 perguntas abertas cobertas: previsões, revisão, Feynman e tutoriais. Critérios por pergunta, comparação, reavaliação e limites explícitos (open-answers.md).  Critérios específicos das 24 aulas, detecção de equívocos previstos, exemplo/limite e orientação para reescrever. Checagem por regras no navegador, sem avaliação semântica geral. Erros e respostas erradas em vermelho nos dois temas. Ver explanation-validation.md. |
 | Tutoriais dos minigames | Implementado na 0.26.0 | Seis etapas por minigame; demonstrações de políticas de rede e autorização por objeto, controles, pontuação, exercício de explicação e consulta durante a partida preservando seu estado. |

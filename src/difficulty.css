@@ -1,0 +1,8 @@
+.difficulty-summary{padding:16px 20px;border:2px solid var(--line);border-left:6px solid var(--acid);background:var(--terminal-panel);color:var(--terminal-text);line-height:1.8;margin:18px 0}
+.level-review{padding:20px;border:2px solid var(--line);background:var(--terminal-panel);margin-top:24px}
+.case-practice h3{font-size:1.25rem;line-height:1.7;margin:20px 0}
+.case-practice .primary{margin-top:18px}
+.case-practice details{border:2px solid var(--line);padding:12px;margin-block:16px}
+.case-practice summary{cursor:pointer}
+.difficulty-assessment{max-width:960px;margin-inline:auto}
+@media(max-width:600px){.level-review,.difficulty-summary{padding:12px}.case-practice h3{font-size:1.125rem}}

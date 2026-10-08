@@ -86,3 +86,7 @@ Primeiro minigame de ação entregue: três ondas e treino curto, quatro espaço
 ## CTF Web — versão 0.23.0
 
 Minigame 08 entregue: três casos fictícios com requisições locais, aulas rápidas, evidência/causa/correção, pistas opcionais, flags, debrief e relatório baixável. PT/EN, três dificuldades e treino curto. Save v20 migra 1–19, IDs a2/a2s e teto total 7400 XP. Detalhes e fontes em web-ctf.md. Próxima etapa: resposta a incidentes Blue Team.
+
+## Atualização 0.30.0 — análise contextual
+
+Nos níveis intermediário e avançado, a partida é seguida por análise contextual própria: duas perguntas na partida completa, uma no treino curto. Partida e análise valem 50% cada; análise e nota final precisam alcançar 70. Nota e XP só são registrados ao concluir a análise. Veja [difficulty.md](difficulty.md).

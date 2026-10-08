@@ -25,3 +25,7 @@ Save v20 migra 1–19 preservando idioma, avatar, missões e recompensas. IDs a2
 ## Validação
 
 Testes do motor verificam conclusão nas três dificuldades, evidência observada, falsos achados, feedback, pistas únicas, penalidades, limiar de aprovação, treino curto, limites da inferência de HTML, migração v19, proteção contra XP repetido e save de 7400 XP. Verificação visual/interativa cobre comparação, envio errado/correto, transições entre casos, relatório, repetição, PT/EN e largura móvel. Validação pedagógica com estudantes continua pendente.
+
+## Atualização 0.30.0 — análise contextual
+
+Nos níveis intermediário e avançado, a partida é seguida por análise contextual própria: duas perguntas na partida completa, uma no treino curto. Partida e análise valem 50% cada; análise e nota final precisam alcançar 70. Nota e XP só são registrados ao concluir a análise. Veja [difficulty.md](difficulty.md).

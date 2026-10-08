@@ -28,3 +28,7 @@ Não é um firewall, IDS/IPS, captura ou laboratório conectado. Nenhum comando,
 - [NIST SP 800-94 — IDPS](https://csrc.nist.gov/pubs/sp/800/94/final)
 
 Referências de conceitos, não recomendações de implantação de produto. O jogo simplifica alcance, tempo, créditos e integridade para fins educativos.
+
+## Atualização 0.30.0 — análise contextual
+
+Nos níveis intermediário e avançado, a partida é seguida por análise contextual própria: duas perguntas na partida completa, uma no treino curto. Partida e análise valem 50% cada; análise e nota final precisam alcançar 70. Nota e XP só são registrados ao concluir a análise. Veja [difficulty.md](difficulty.md).
