@@ -4,6 +4,14 @@ import { b, type Bilingual } from './core';
 // causal explanation and two incorrect interpretations. All cases are fictional.
 type Row = [Bilingual,Bilingual,Bilingual,Bilingual,Bilingual,Bilingual,Bilingual];
 export const advancedCases:Record<string,Row> = {
+m25:[
+b('O hash da cópia coincide com a referência coletada. Mas o relógio estava atrasado e não existe registro de quem guardou o arquivo antes da coleta. A direção pede um relatório atribuindo culpa ao titular da conta. Qual conclusão é defensável?','The copy hash matches the collected reference. But the clock was slow and no record shows who held the file before collection. Management requests a report blaming the account holder. Which conclusion is defensible?'),
+b('Relatar integridade relativa à coleta, registrar lacunas de custódia e relógio e correlacionar outras fontes antes de atribuir autoria.','Report integrity relative to collection, record custody and clock gaps and correlate other sources before attribution.'),
+b('Atribuir autoria ao titular: hash coincidente valida toda a história do arquivo.','Attribute authorship to the account holder: a matching hash validates the entire file history.'),
+b('Corrigir o horário no original e preencher o histórico anterior com a hipótese mais provável.','Correct the original timestamp and fill earlier history with the most likely hypothesis.'),
+b('Integridade, origem e interpretação são diferentes: hash não reconstrói custódia anterior nem prova a pessoa responsável.','Integrity, origin and interpretation differ: a hash neither reconstructs earlier custody nor proves the responsible person.'),
+b('Uma referência calculada após a coleta comprova todos os acontecimentos anteriores.','A reference calculated after collection proves every earlier event.'),
+b('Normalizar horários autoriza alterar registros originais sem documentar a mudança.','Normalizing timestamps permits original records to be changed without documenting it.')],
 m1:[
 b('A senha de uma loja vazou. Seu e-mail usa a mesma senha, tem MFA e mantém sessões abertas. Você ainda consegue entrar. Qual plano reduz o risco imediato e evita repetição?','A shop password leaked. Your email reuses it, has MFA and active sessions. You can still sign in. Which plan reduces immediate risk and recurrence?'),
 b('Trocar as senhas reutilizadas por exclusivas, revisar e encerrar sessões suspeitas e conferir recuperação e MFA.','Replace reused passwords with unique ones, review and revoke suspicious sessions, and check recovery and MFA.'),

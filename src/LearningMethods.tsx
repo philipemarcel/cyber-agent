@@ -7,7 +7,7 @@ import { assessExplanation, explanationRubrics, type ExplanationAssessment } fro
 import OpenAnswerValidation from './OpenAnswerValidation';
 import './learning.css';
 
-const related:Record<string,string>={m1:'m12',m2:'m13',m3:'m8',m4:'m14',m5:'m7',m6:'m10',m7:'m5',m8:'m15',m9:'m18',m10:'m17',m11:'m19',m12:'m1',m13:'m2',m14:'m4',m15:'m8',m16:'m21',m17:'m10',m18:'m9',m19:'m12',m20:'m21',m21:'m16',m22:'m23',m23:'m22',m24:'m7'};
+const related:Record<string,string>={m1:'m12',m2:'m13',m3:'m8',m4:'m14',m5:'m7',m6:'m10',m7:'m5',m8:'m15',m9:'m18',m10:'m17',m11:'m19',m12:'m1',m13:'m2',m14:'m4',m15:'m8',m16:'m21',m17:'m10',m18:'m9',m19:'m12',m20:'m21',m21:'m16',m22:'m23',m23:'m22',m24:'m7',m25:'m16'};
 
 export function CompleteExplanation({id,moving,active}:{id:string;moving:boolean;active:boolean}){
  const lang=useSave(s=>s.save.lang);const tx=(pt:string,en:string)=>lang==='pt'?pt:en;const u=teachingUnits[id];

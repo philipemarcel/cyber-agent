@@ -1,8 +1,9 @@
+import { forensicTeaching } from './forensics';
 import { b, type Bilingual } from './core';
 
 export type TeachingUnit={mechanism:Bilingual;case:Bilingual;reason:Bilingual;limit:Bilingual;frames:Bilingual[];recall:Bilingual;answer:Bilingual;transfer:Bilingual;transferAnswer:Bilingual};
 const unit=(mechanism:Bilingual,caseText:Bilingual,reason:Bilingual,limit:Bilingual,frames:Bilingual[],recall:Bilingual,answer:Bilingual,transfer:Bilingual,transferAnswer:Bilingual):TeachingUnit=>({mechanism,case:caseText,reason,limit,frames,recall,answer,transfer,transferAnswer});
-export const teachingUnits:Record<string,TeachingUnit>={
+export const teachingUnits:Record<string,TeachingUnit>={m25:forensicTeaching,
 m24:unit(
 b('Contenção limita o dano em andamento; erradicação trata a causa e acessos; recuperação demonstra que dados e funções podem voltar. Preservar evidências com origem e horário ajuda a justificar decisões. Atividades podem se sobrepor conforme risco e plano.','Containment limits ongoing harm; eradication addresses cause and access; recovery demonstrates that data and functions can return. Preserving evidence with source and time supports decisions. Activities may overlap according to risk and plan.'),
 b('Lia isolou N-24. O portal abre após o backup, mas a sessão cloud indevida ainda consegue ler notas. Ela pode declarar o incidente resolvido? Explique antes de avançar.','Lia isolated N-24. The portal opens after backup, but the unauthorized cloud session still reads grades. Can she declare the incident resolved? Explain before proceeding.'),

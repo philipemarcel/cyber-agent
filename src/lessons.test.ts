@@ -22,7 +22,7 @@ describe('lessons available before challenges',()=>{
   for(const m of modules){const n=Number(m.label);expect(lessonMission(m.id)).toBe(m.id);for(const suffix of ['a','b'])expect(lessonMission(`s${n}${suffix}`)).toBe(m.id)}
  });
  it('does not route a cross-topic assessment or malformed IDs to a wrong lesson',()=>{
-  for(const id of ['placement','m0','m25','s1c','anything1','m1junk','s08a'])expect(lessonMission(id)).toBeNull();
+  for(const id of ['placement','m0','m26','s1c','anything1','m1junk','s08a'])expect(lessonMission(id)).toBeNull();
  });
  it('keeps campaign progression while lessons themselves stay readable',()=>{
   expect(canStudyChallenge('m1',{},false)).toBe(true);expect(canStudyChallenge('m2',{},false)).toBe(false);expect(canStudyChallenge('m2',{m1:100},false)).toBe(true);expect(canStudyChallenge('m7',{},true)).toBe(true);expect(canStudyChallenge('m8',{},false)).toBe(true);expect(canStudyChallenge('unknown',{},true)).toBe(false);

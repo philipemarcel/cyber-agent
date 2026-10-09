@@ -1,3 +1,4 @@
+import { forensicLesson } from './forensics';
 import { incidentLesson } from './incidentLesson';
 import { trafficLesson } from './trafficLesson';
 import { detectionLesson } from './detectionLesson';
@@ -27,7 +28,7 @@ export type Lesson = {
  sources:{label:string;url:string}[];
 };
 const source=(label:string,url:string)=>({label,url});
-const baseLessons:Lesson[]=[cryptoLesson,permissionsLesson,commandLesson,authLesson,emailLesson,cloudLesson,segmentLesson,investigationLesson,osLesson,appliedLesson,programmingLesson,frameworkLesson,blueLesson,detectionLesson,trafficLesson,incidentLesson,
+const baseLessons:Lesson[]=[forensicLesson,cryptoLesson,permissionsLesson,commandLesson,authLesson,emailLesson,cloudLesson,segmentLesson,investigationLesson,osLesson,appliedLesson,programmingLesson,frameworkLesson,blueLesson,detectionLesson,trafficLesson,incidentLesson,
  {id:'m1',intro:b('Pense na sua conta como uma casa: uma chave exclusiva e uma segunda barreira protegem situações diferentes.','Think of your account as a home: a unique key and a second barrier protect against different situations.'),concepts:[
  {title:b('Uma chave para cada conta','One key for each account'),text:b('Se uma senha vazar, quem a conhece pode tentar entrar em outros serviços. Senhas longas e exclusivas limitam esse efeito em cadeia.','If a password leaks, someone can try it on other services. Long, unique passwords limit this chain reaction.'),example:b('A senha da loja vazou. Se o e-mail usa outra senha, a mesma chave não abre as duas contas.','The shop password leaked. If email uses a different password, the same key cannot open both accounts.')},
  {title:b('O gerenciador guarda as chaves','A manager stores the keys'),text:b('Um gerenciador confiável pode criar e guardar senhas diferentes. Proteja o próprio gerenciador e as opções de recuperação.','A trusted password manager can create and store different passwords. Protect the manager itself and its recovery options.'),example:b('Você memoriza a proteção do cofre e deixa cada serviço com uma senha gerada. Não use frases deste jogo como senhas reais.','You remember the vault protection and give each service a generated password. Do not use game phrases as real passwords.')},
@@ -80,7 +81,7 @@ export const lessons:Lesson[]=baseLessons.map(lesson=>{
 
 /** Only known campaign/side-quest IDs map to a lesson. Placement is cross-topic. */
 export function lessonMission(id:string):string|null {
- const match=/^(?:m([1-9]|1[0-9]|2[0-4])|s([1-9]|1[0-9]|2[0-4])[ab])$/.exec(id);
+ const match=/^(?:m([1-9]|1[0-9]|2[0-5])|s([1-9]|1[0-9]|2[0-5])[ab])$/.exec(id);
  const mission=match?`m${match[1]||match[2]}`:null;
  return mission&&modules.some(m=>m.id===mission)?mission:null;
 }

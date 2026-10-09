@@ -4,7 +4,23 @@ Preparado para GitHub Pages em /cyber-agent/. Consulte PUBLICAR-NO-GITHUB.md.
 
 Jogo web educativo de cibersegurança, baseado no PROJETO.md fornecido pelo usuário.
 
-## Versão atual — 0.29.0
+## Versão atual — 0.32.0
+
+Redesenho de UX/UI fundamentado em pesquisa: leitura por conceito com índice e opção Ler tudo; exemplo separado; objetivos e próximos passos; modo foco e leitura ampliada opcionais; retomada local de posição/marcações sem afetar XP. Rascunhos e simulações são preservados entre abas na aula aberta. Nos minigames, ajuda contextual, preparação antes da execução e CTF com evidência → causa → correção.
+
+Identidade tech/terminal e pixel art preservadas, corpo de leitura em fonte comum, superfícies mais calmas, teclado e temas claro/escuro. [Pesquisa detalhada, fontes e limites](docs/ux-research.md). [Mudanças e validação](docs/ux-implementation.md). A eficácia pedagógica ainda depende de avaliação com estudantes.
+
+## Entrega anterior — 0.31.0
+
+Missão 25 Blue Team: forense digital. Aula completa, preservação do original, cópia de trabalho, comparação real SHA-256, cadeia de custódia e correlação de horários. Bancada com bloqueios e recuperação da cópia alterada, três decisões, dois reforços, duas revisões e atividades abertas validadas PT/EN. Análise contextual por dificuldade. [Modelo e fontes](docs/forensics.md).
+
+25 missões, 50 reforços, 25 aulas, 120 conceitos, 81 passos guiados e 102 respostas abertas. Save v22 migra versões 1–21; teto 8000 XP. Próximo tópico: threat hunting. [Roadmap](docs/roadmap.md).
+
+## Entrega anterior — 0.30.0
+
+Dificuldade contextual com análise adicional, justificativas, preferência persistida e pontuação combinada. [Funcionamento](docs/difficulty.md).
+
+## Entrega anterior — 0.29.0
 
 Missão 24 Blue Team: resposta a incidentes, contenção proporcional, evidências, erradicação e recuperação. Aula com cinco conceitos, três passos guiados, bancada com bloqueios e retorno gradual, quatro decisões em três dificuldades, dois reforços e duas revisões. Feynman, previsão e recuperação/transferência com validação local PT/EN.
 

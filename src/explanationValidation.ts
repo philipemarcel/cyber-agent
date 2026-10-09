@@ -7,6 +7,11 @@ const rubric=(a:Criterion,c:Criterion,pattern:RegExp,pt:string,en:string):Rubric
 // Deliberately conservative, authored checks. This is not an AI or a general language grader.
 // Patterns operate on accent-normalized sentences, not a bag of keywords.
 export const explanationRubrics:Record<string,Rubric>={
+m25:rubric(
+criterion('Explique a comparação de bytes por hash.','Explain byte comparison using a hash.',/hash.{0,85}(bytes|integridade|integrity|referencia|reference)/),
+criterion('Documente origem e percurso na cadeia de custódia.','Document origin and handling in chain of custody.',/(cadeia|custody).{0,90}(origem|respons|transfer|origin|custodian)/),
+/hash.{0,35}(prova autoria|proves authorship|garante veracidade|guarantees truth)/,
+'Hash compara bytes, mas não prova autoria ou veracidade. A cadeia documenta origem e transferências; correlacione fontes e declare limites.','A hash compares bytes but does not prove authorship or truth. Custody documents origin and transfers; correlate sources and state limits.'),
 m24:rubric(
 criterion('Diferencie contenção de recuperação.','Distinguish containment from recovery.',/(conten|contain).{0,90}(dano|expans|harm|spread)/),
 criterion('Relacione recuperação a teste de dados e acessos.','Connect recovery to testing data and access.',/(test|verific|check).{0,100}(dado|acesso|sess|func|data|access|session)/),

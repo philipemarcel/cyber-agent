@@ -24,3 +24,5 @@ import './applied.css';
 
 import './terminal-theme.css';
 import './feedback.css';
+
+import './study-ux.css';

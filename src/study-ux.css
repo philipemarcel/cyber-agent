@@ -1,0 +1,43 @@
+/* Tech identity for orientation, calm surfaces for reading and decisions. */
+.app-shell{--study-measure:70ch;--study-copy:1.0625rem}
+.app-shell main{max-width:1440px;margin-inline:auto}
+.app-shell .topbar{height:auto;min-height:76px;gap:16px;align-items:center;flex-wrap:wrap;padding-block:12px}
+.app-shell .top-actions{flex-wrap:wrap;justify-content:flex-end}
+.study-control{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--c-819e88);background:var(--c-101713);color:var(--c-ffffff);font-size:.875rem;min-height:44px}
+.study-control[aria-pressed=true]{background:var(--c-19261e);border:2px solid var(--c-a3f5b3);box-shadow:inset 3px 0 var(--c-a3f5b3)}
+.app-shell :is(.lesson-content,.game-page,.action-game,.minigame-tutorial) :is(p,li,dd){font-family:'Manrope',system-ui,sans-serif;line-height:1.8;letter-spacing:normal;font-size:var(--study-copy)}
+.app-shell :is(.lesson-heading,.page-heading,.game-heading)>div>p{max-width:var(--study-measure)}
+.app-shell :is(.learning-card,.lesson-example,.lesson-concepts,.experiment-guide,.challenge-panel) :is(p,dl){max-width:var(--study-measure)}
+.app-shell :is(.lesson-heading h1,.lesson-content h2,.lesson-content h3,.challenge-panel h2,.game-heading h1,.page-heading h1,.action-game h2){font-family:'Manrope',system-ui,sans-serif;letter-spacing:-.025em;line-height:1.35}
+.app-shell :is(.eyebrow,.lesson-section-label>span,.game-toolbar>span,.concept-number){font-family:var(--mono);letter-spacing:.06em}
+.app-shell .lesson-content{padding:clamp(18px,3vw,36px);border:1px solid var(--c-819e88);box-shadow:none}
+.app-shell :is(.learning-card,.experiment-guide){box-shadow:none;border-width:1px;margin-block:24px}
+.app-shell :is(.lesson-page,.game-page,.minigame-tutorial){max-width:1120px;margin-inline:auto}
+.app-shell :is(.lesson-example,.learning-feedback,.lesson-observation){padding:20px 24px;border-left-width:4px}
+.app-shell :is(.choice,.ctf-choice){line-height:1.6;padding-block:18px}
+.app-shell .choice{gap:16px;align-items:center}
+.app-shell .choice-letter{flex-shrink:0}
+.app-shell .learning-flow button{min-height:80px;padding:14px;line-height:1.6;align-items:flex-start}
+.app-shell :is(textarea,pre){max-width:100%}
+.app-shell textarea{font-family:'Manrope',system-ui,sans-serif;font-size:1.0625rem;line-height:1.7;resize:vertical}
+.app-shell .lesson-walkthrough dd{margin:6px 0 20px}
+.app-shell .lesson-walkthrough dt{font-weight:800;color:var(--c-a3f5b3)}
+.app-shell .lesson-footer{border-top:1px solid var(--c-819e88);margin-top:24px}
+.focus-mode .sidebar{display:none}
+.focus-mode .workspace{margin-left:0}
+.focus-mode .mobile-menu{display:none}
+.focus-mode :is(.scene-sprites,.lesson-mentor,.environment,.result-art){display:none}
+.focus-mode .sprite-idle{animation:none!important}
+.focus-context{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid var(--c-819e88);background:var(--c-101713);padding:12px 18px;margin-bottom:24px;font:.875rem var(--mono);line-height:1.7}
+.reading-comfort{--study-copy:1.1875rem;--study-measure:62ch}
+.reading-comfort :is(.choice,.ctf-choice,.lesson-toggle,.learning-label){font-size:1.1875rem;line-height:1.8}
+.reading-comfort textarea{font-size:1.1875rem}
+.app-shell :is(button,a,input,select,textarea,summary,[tabindex]){scroll-margin-block:180px}
+@media(max-width:1000px){.app-shell .topbar{position:relative}.app-shell .breadcrumbs{width:100%}.app-shell .top-actions{width:100%;justify-content:flex-start}.app-shell :is(button,a,input,select,textarea,summary,[tabindex]){scroll-margin-block:28px}}
+@media(max-width:640px){.app-shell main{padding-inline:14px}.app-shell .lesson-heading h1{font-size:1.75rem}.app-shell .lesson-heading{align-items:flex-start}.app-shell .lesson-mentor{width:52px;height:78px}.app-shell .lesson-step-nav button{gap:5px;padding:10px 6px;font-size:.9rem}.app-shell .lesson-step-nav svg{display:none}.app-shell .lesson-example{padding:16px}.app-shell .choice{flex-wrap:wrap}.app-shell .answer-selection{margin-left:auto}.app-shell .focus-context{padding:12px}.app-shell .learning-flow{grid-template-columns:1fr 1fr}.app-shell .learning-flow button{min-height:100px}}
+@media(prefers-reduced-motion:reduce){.app-shell *{scroll-behavior:auto!important;transition:none!important}}
+@media(forced-colors:active){.study-control[aria-pressed=true]{border:3px solid Highlight}.focus-context{border:1px solid CanvasText}}
+
+.research-note{padding:24px;border:1px solid var(--c-819e88);border-left:4px solid var(--c-83ee9a);background:var(--c-101713);margin-top:28px}.research-note p{max-width:70ch}.research-note h2{font:700 1.4rem 'Manrope',system-ui,sans-serif;line-height:1.5}.research-note a{display:inline-flex;align-items:center;min-height:44px;line-height:1.6}
+
+.app-shell .lesson-brief h2{font:700 1.25rem/1.5 'Manrope',system-ui,sans-serif}

@@ -23,10 +23,10 @@ describe('cryptography laboratory',()=>{
  });
  it('migrates v3 progress, identity and placement while rejecting new IDs in old-version imports',()=>{
   const legacy={...reward(initial,'m8',100,'hard',false),version:3,lang:'en',avatar:2,placement:true};
-  const migrated=normalizeSave(legacy)!;expect(migrated).toEqual({...legacy,version:21});expect(validSave(migrated)).toBe(true);
+  const migrated=normalizeSave(legacy)!;expect(migrated).toEqual({...legacy,version:22});expect(validSave(migrated)).toBe(true);
   const expanded=reward(migrated,'m9',100,'normal',false);expect(expanded.xp).toBe(350);expect(normalizeSave({...expanded,version:3})).toBeNull();expect(normalizeSave(JSON.parse(JSON.stringify(expanded)))).toEqual(expanded);
  });
  it('keeps reward maxima and rejects repeated farming for the new mission and reinforcements',()=>{
-  let s=reward(initial,'m9',75,'easy',false);expect(s.xp).toBe(75);s=reward(s,'m9',100,'hard',false);expect(s.xp).toBe(200);expect(reward(s,'m9',100,'hard',false)).toEqual(s);s=reward(s,'s9a',100,'hard',true);s=reward(s,'s9b',100,'normal',true);expect(s.xp).toBe(300);expect(normalizeSave(s)).toEqual(s);expect(reward(s,'m25',100,'easy',false)).toEqual(s);
+  let s=reward(initial,'m9',75,'easy',false);expect(s.xp).toBe(75);s=reward(s,'m9',100,'hard',false);expect(s.xp).toBe(200);expect(reward(s,'m9',100,'hard',false)).toEqual(s);s=reward(s,'s9a',100,'hard',true);s=reward(s,'s9b',100,'normal',true);expect(s.xp).toBe(300);expect(normalizeSave(s)).toEqual(s);expect(reward(s,'m26',100,'easy',false)).toEqual(s);
  });
 });

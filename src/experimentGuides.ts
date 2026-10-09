@@ -1,10 +1,11 @@
+import { forensicGuide } from './forensics';
 import { b, type Bilingual } from './core';
 export type ExperimentStep={action:Bilingual;result:Bilingual};
 export type ExperimentGuide={objective:Bilingual;limit:Bilingual;steps:ExperimentStep[]};
 const s=(actionPt:string,actionEn:string,resultPt:string,resultEn:string):ExperimentStep=>({action:b(actionPt,actionEn),result:b(resultPt,resultEn)});
 
 // Instructions name actual controls; advancing this guide never operates the desk.
-export const experimentGuides:Record<string,ExperimentGuide>={
+export const experimentGuides:Record<string,ExperimentGuide>={m25:forensicGuide,
 m24:{objective:b('Comparar contenção, preservação e retorno com critérios; descobrir por que o portal abrir não basta.','Compare containment, preservation and criteria-based return; discover why opening the portal is insufficient.'),limit:b('Caso fixo fictício sem EDR, coleta ou sistemas reais. O bloqueio representa critérios didáticos deste caso, não uma ordem universal para incidentes.','Fixed fictional case with no EDR, collection or real systems. Blocking represents educational criteria for this case, not a universal incident sequence.'),steps:[
 s('Clique Liberar retorno antes de qualquer ação. Leia o bloqueio e identifique os critérios pendentes.','Click Release return before any action. Read the block and identify pending criteria.','O portal permanece fora de produção. Disponibilidade não prova recuperação; o modelo exige contenção, preservação, correção e teste.','The portal remains out of production. Availability does not prove recovery; the model requires containment, preservation, correction and testing.'),
 s('Clique Conter estação e depois Testar recuperação. Compare a estação isolada com a sessão cloud ainda ativa. Em seguida preserve os registros.','Click Contain workstation then Test recovery. Compare the isolated workstation with the still-active cloud session. Then preserve records.','Contenção limita um caminho, mas não revoga a sessão. O teste falha. Preservar registra origem, horário, coletor e integridade; poderia ter sido feito antes da contenção neste modelo.','Containment limits one path but does not revoke the session. The test fails. Preservation records source, time, collector and integrity; it could precede containment in this model.'),
