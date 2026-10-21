@@ -4,7 +4,23 @@ Preparado para GitHub Pages em /cyber-agent/. Consulte PUBLICAR-NO-GITHUB.md.
 
 Jogo web educativo de cibersegurança, baseado no PROJETO.md fornecido pelo usuário.
 
-## Versão atual — 0.32.0
+## Versão atual — 0.34.0
+
+Red Team iniciado com missão 27: OSINT e reconhecimento autorizado. Cinco conceitos, quatro fichas fictícias interativas, quatro passos guiados, três decisões, dois reforços e duas revisões. Origem, atualidade, independência, minimização e escopo; Feynman e exercícios abertos validados PT/EN. Análise contextual nos níveis superiores. Sem consultas externas.
+
+27 missões, 54 reforços, 27 aulas, 130 conceitos, 89 passos guiados e 110 respostas abertas. Save v24 migra 1–23; teto 8600 XP. Red Team exige núcleo comum até missão 20 ou nivelamento, sem pré-requisito Blue Team. Próximo: enumeração autorizada. [Modelo e fontes](docs/osint.md). [Roadmap](docs/roadmap.md).
+
+## Entrega anterior — 0.33.1
+
+Barra lateral: perfil do agente logo abaixo da marca, com nível, XP total e progresso para o próximo nível. Clique ou use o teclado para abrir o perfil. Entrada Meu agente e título Base de operações removidos; versão móvel e temas preservados.
+
+## Entrega anterior — 0.33.0
+
+Missão 26 Blue Team: threat hunting orientado por hipótese. Aula em cinco conceitos, quatro experimentos guiados, busca simulada por equipamento/período/cobertura, três decisões, dois reforços e duas revisões. Feynman e respostas abertas PT/EN com critérios próprios; análise contextual nos níveis superiores.
+
+26 missões, 52 reforços, 26 aulas, 125 conceitos, 85 passos guiados e 106 respostas abertas. Save v23 migra 1–22; teto 8300 XP. Os seis tópicos introdutórios Blue Team estão entregues; próximo marco: Red Team, começando por OSINT e reconhecimento autorizado. [Modelo, fontes e limites](docs/hunting.md). [Roadmap](docs/roadmap.md).
+
+## Entrega anterior — 0.32.0
 
 Redesenho de UX/UI fundamentado em pesquisa: leitura por conceito com índice e opção Ler tudo; exemplo separado; objetivos e próximos passos; modo foco e leitura ampliada opcionais; retomada local de posição/marcações sem afetar XP. Rascunhos e simulações são preservados entre abas na aula aberta. Nos minigames, ajuda contextual, preparação antes da execução e CTF com evidência → causa → correção.
 

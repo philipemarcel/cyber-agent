@@ -1,6 +1,6 @@
 # Roadmap — CYBER//AGENT
 
-Atualizado em 09/10/2026. Referência da entrega 0.32.0. Este roteiro substitui os estados antigos de M0–M3/v2/v3 do documento inicial; mantém o escopo original e registra a ordem atual de desenvolvimento. Datas de etapas futuras ainda não foram definidas.
+Atualizado em 09/10/2026. Referência da entrega 0.34.0. Este roteiro substitui os estados antigos de M0–M3/v2/v3 do documento inicial; mantém o escopo original e registra a ordem atual de desenvolvimento. Datas de etapas futuras ainda não foram definidas.
 
 ## Entregas e próximos marcos
 
@@ -8,8 +8,10 @@ Atualizado em 09/10/2026. Referência da entrega 0.32.0. Este roteiro substitui 
 |---|---|---|
 | Dificuldade contextual | Implementado na 0.30.0 | Preferência salva; análise contextual nos níveis superiores das 24 missões, 48 reforços e dois minigames. 26 casos avançados próprios, decisão e justificativa, revisão por nível, pontuação 50/50 e aprovação da análise exigida. Tutoriais e relatório atualizados. Bancadas existentes preservadas; ver difficulty.md. |
 | UX/UI para aprendizagem | Implementado na 0.32.0 | Leitura em blocos com índice e modo completo; objetivos, exemplo e ações seguintes; foco/leitura ampliada opcionais, retomada local, ajuda contextual e CTF em etapas. Pesquisa detalhada em ux-research.md; validação em ux-implementation.md. Eficácia com estudantes ainda pendente. |
+| Navegação do agente | Implementado na 0.33.1 | Identidade, nível e XP logo abaixo da marca; bloco clicável abre o perfil. Menu Meu agente e título Base de operações removidos; teclado e menu móvel preservados. |
+| Threat hunting | Implementado na 0.33.0 | Missão 26: hipótese, cobertura, linha de base e alternativas, correlação e relatório. Bancada com equipamento, janela UTC e disponibilidade de processos; decisões, reforços, revisões, Feynman e critérios abertos PT/EN. |
 | Forense digital | Implementado na 0.31.0 | Missão 25: original protegido, cópia, SHA-256 real no navegador, custódia e linha do tempo; aula, bancada, dois reforços, duas revisões e validação aberta. Ver forensics.md. |
-| Upload ao GitHub | Atualizado na 0.32.0 | Cópia sincronizada, base /cyber-agent/, arte/roadmap compatíveis, workflow npm ci/test/build/Pages e ZIP sem dependências ou credenciais. |
+| Upload ao GitHub | Atualizado na 0.34.0 | Cópia sincronizada, base /cyber-agent/, arte/roadmap compatíveis, workflow npm ci/test/build/Pages e ZIP sem dependências ou credenciais. |
 | Visual e acessibilidade | Revisado na 0.25.0 | Verde/preto/cinza escuro; contraste medido, textos maiores, foco, salto ao conteúdo, navegação acessível e reflow. Textos cinza convertidos para branco na 0.24.1. Temas claro/escuro na 0.25.0, preferência salva e contraste conferido nas 24 aulas e nos minigames. Seleção explícita das respostas na 0.25.1, com texto e marcador. Ver accessibility.md; não representa certificação WCAG completa. |
 | Validação de respostas abertas e erros | Ampliado na 0.28.0 | Todas as 98 perguntas abertas cobertas: previsões, revisão, Feynman e tutoriais. Critérios por pergunta, comparação, reavaliação e limites explícitos (open-answers.md).  Critérios específicos das 24 aulas, detecção de equívocos previstos, exemplo/limite e orientação para reescrever. Checagem por regras no navegador, sem avaliação semântica geral. Erros e respostas erradas em vermelho nos dois temas. Ver explanation-validation.md. |
 | Tutoriais dos minigames | Implementado na 0.26.0 | Seis etapas por minigame; demonstrações de políticas de rede e autorização por objeto, controles, pontuação, exercício de explicação e consulta durante a partida preservando seu estado. |
@@ -22,8 +24,9 @@ Atualizado em 09/10/2026. Referência da entrega 0.32.0. Este roteiro substitui 
 | Ato 03 — criptografia aplicada | Implementado na 0.15.0 | Missão 18: finalidade, assinatura/certificado, confiança, validade/revogação e chave comprometida; aula, bancada e dois reforços. Ver applied-crypto.md. |
 | Ato 03 — programação para segurança | Implementado na 0.16.0 | Missão 19: validação de entrada, tratamento de falhas e registros sem segredos; aula, bancada, dois reforços e duas revisões. Ver programming-security.md. |
 | Ato 03 — frameworks | Implementado na 0.17.0 | Missão 20: referências por propósito, fases, evidências, CSF 2.0 e OWASP Top 10/ASVS; aula, bancada, dois reforços e duas revisões. Ver frameworks.md. |
-| Blue Team | Ampliado na 0.31.0 | Missões 21–25: monitoramento/SIEM, triagem, tráfego, resposta a incidentes e forense; aulas, bancadas, dez reforços e dez revisões. Tráfego entregue na 0.21.0 (traffic.md); resposta a incidentes entregue na 0.29.0 (incident-response.md); forense entregue na 0.31.0; hunting planejado. |
-| Demais especializações | Planejado | Red Team; AppSec/DevSecOps; Cloud/infraestrutura; GRC/privacidade/liderança. |
+| Blue Team | Ampliado na 0.33.0 | Missões 21–26: monitoramento/SIEM, triagem, tráfego, resposta a incidentes, forense e threat hunting; aulas, bancadas, 12 reforços e 12 revisões. Os seis tópicos introdutórios estão entregues; não equivalem a formação completa de especialista. Ver hunting.md. |
+| Red Team | Iniciado na 0.34.0 | Missão 27: OSINT e reconhecimento autorizado; aula, fichas locais com origem/data, classificações justificadas, dois reforços, duas revisões e validação aberta PT/EN. Liberado pelo núcleo comum ou nivelamento. Enumeração e web/APIs ainda pendentes. Ver osint.md. |
+| Demais especializações | Planejado | AppSec/DevSecOps; Cloud/infraestrutura; GRC/privacidade/liderança. |
 | Minigame 07 — Tower Defense de rede | Implementado na 0.22.0 | Aba Minigames de ação, três ondas, quatro espaços, orçamento, firewall, assinatura e triagem; três dificuldades, PT-BR/EN, pausa, avanço manual, treino curto, nota e XP/save. Ver tower-defense.md. |
 | Minigame 08 — CTF Web simulado | Implementado na 0.23.0 | Três casos NEXUS: autorização por objeto, função e saída HTML; experimentos fechados, aulas rápidas, pistas, evidência/causa/correção, flags e relatório baixável. PT/EN, dificuldades, treino curto, nota e XP/save. Ver web-ctf.md; distinto do CTF final. |
 | Encerramento da campanha | Planejado | CTF completo e Capstone combinando vários conhecimentos. |
@@ -33,37 +36,37 @@ Atualizado em 09/10/2026. Referência da entrega 0.32.0. Este roteiro substitui 
 
 ## Sequência atual de implementação
 
-1. **Entregue:** núcleo comum 15–20 e Blue Team 21–25. As cinco trilhas estão apresentadas; só Blue Team possui missões próprias.
+1. **Entregue:** núcleo comum 15–20 e Blue Team 21–26. As cinco trilhas estão apresentadas; Blue Team e Red Team possuem missões próprias.
 2. **Entregue nesta etapa:** iniciar os minigames de ação com Tower Defense de rede (07), incluindo treino curto, dificuldades, feedback, XP e preservação de save.
 3. **Entregue na 0.23.0:** CTF Web simulado (08), em motor fechado, com objetivos, pistas, validação dos achados e relatório. A primeira etapa dos minigames de ação está concluída.
-4. **Resposta a incidentes entregue na 0.29.0:** missão 24, aula, bancada, reforços e revisões. **Forense digital entregue na 0.31.0:** missão 25. **Próximo:** threat hunting. Aula aprofundada, exemplos cotidianos, Experimente guiado, reforços e revisões continuam obrigatórios em cada tópico.
-5. **Depois:** ampliar Red Team (OSINT/reconhecimento, enumeração, web/APIs, testes autorizados e relatórios), AppSec/DevSecOps, Cloud/infraestrutura e GRC/privacidade/liderança, conforme os tópicos de PROJETO.md.
+4. **Resposta a incidentes entregue na 0.29.0:** missão 24, aula, bancada, reforços e revisões. **Forense digital entregue na 0.31.0:** missão 25. **Threat hunting entregue na 0.33.0:** missão 26. **OSINT entregue na 0.34.0:** missão 27, início do Red Team. **Próximo:** enumeração autorizada. Aula aprofundada, exemplos cotidianos, Experimente guiado, reforços e revisões continuam obrigatórios em cada tópico.
+5. **Depois:** ampliar Red Team (enumeração, web/APIs, testes autorizados e relatórios), AppSec/DevSecOps, Cloud/infraestrutura e GRC/privacidade/liderança, conforme os tópicos de PROJETO.md.
 6. **Marcos posteriores:** CTF final e Capstone; nivelamento/certificados além dos fundamentos; contas, sincronização e ranking em etapa própria.
 
-Esta ordem foi alterada a pedido do usuário em 07/10/2026: minigames de ação antes de continuar as missões. A trilha Blue Team permanece incompleta. Nivelamento libera acesso sem concluir o núcleo comum; não existe certificado de especialização.
+Esta ordem foi alterada a pedido do usuário em 07/10/2026: minigames de ação antes de continuar as missões. Os seis tópicos introdutórios Blue Team estão entregues; cenários avançados e validação pedagógica continuam pendentes. Nivelamento libera acesso sem concluir o núcleo comum; não existe certificado de especialização.
 
 ## Inventário do que já foi feito
 
 | Entrega | Quantidade/estado |
 |---|---|
-| Missões principais | 25: sete no Ato 01, sete no Ato 02, seis no núcleo comum do Ato 03 e cinco Blue Team |
-| Reforços das missões | 50, dois por missão |
-| Aulas | 25, todas PT-BR/EN com exemplos cotidianos |
-| Explicações aprofundadas | 120 conceitos; revisão editorial/técnica das aulas existentes na 0.20.0, aula de tráfego adicionada na 0.21.0 |
-| Experimente | 81 passos guiados, com instrução, comparação, interpretação revelável e limites |
-| Revisões | 50 questões difíceis, duas por aula, feedback individual; sem nota/XP |
+| Missões principais | 27: sete no Ato 01, sete no Ato 02, seis no núcleo comum do Ato 03, seis Blue Team e uma Red Team |
+| Reforços das missões | 54, dois por missão |
+| Aulas | 27, todas PT-BR/EN com exemplos cotidianos |
+| Explicações aprofundadas | 130 conceitos; revisão editorial/técnica das aulas existentes na 0.20.0, aula de tráfego adicionada na 0.21.0 |
+| Experimente | 89 passos guiados, com instrução, comparação, interpretação revelável e limites |
+| Revisões | 54 questões difíceis, duas por aula, feedback individual; sem nota/XP |
 | Minigames 1–6 | Cartas de decisão, caça ao phishing, forja, puzzles de criptografia, terminais fechados e investigação de logs; versões educativas entregues |
 | Minigame 7 | Tower Defense jogável + treino curto; não aumenta o número de missões/aulas |
-| Minigame 8 | CTF Web jogável + treino curto; três aulas rápidas próprias, sem aumentar as 25 aulas de missões |
-| Progressão | Save local/exportação/importação v22 (migra 1–21), XP sem repetição ilimitada, avatar, níveis e conquistas; teto 8000 XP |
+| Minigame 8 | CTF Web jogável + treino curto; três aulas rápidas próprias, sem aumentar as 27 aulas de missões |
+| Progressão | Save local/exportação/importação v24 (migra 1–23), XP sem repetição ilimitada, avatar, níveis e conquistas; teto 8600 XP |
 | Certificados/nivelamento | Somente fundamentos/Ato 01; registros educativos sem validade oficial |
 
 ## Validação ainda pendente
 
-Avaliar compreensão, dificuldade e engajamento com estudantes. Entrega técnica e testes aprovados não representam aprovação pedagógica. Threat hunting e demais trilhas permanecem pendentes de implementação. Na 0.32.0 foram conferidos os novos fluxos de aula e minigames no navegador, em desktop e celular, nos dois temas; a verificação não é uma auditoria WCAG completa.
+Avaliar compreensão, dificuldade e engajamento com estudantes. Entrega técnica e testes aprovados não representam aprovação pedagógica. As demais trilhas e cenários avançados permanecem pendentes de implementação. Na 0.32.0 foram conferidos os novos fluxos de aula e minigames no navegador, em desktop e celular, nos dois temas; a verificação não é uma auditoria WCAG completa.
 
 Pronto quando: feedback coerente, saves preservados, consulta mantendo desafio, testes e compilação aprovados, UI desktop/celular conferida e publicação concluída. Validação técnica não substitui avaliação com estudantes.
 
 ## Limites atuais
 
-25 missões e 50 reforços, sem login. O nivelamento e os certificados continuam relativos aos sete fundamentos. Terminais, processos e políticas são simulações fechadas. Os minigames 1–6 têm implementações educativas e Tower Defense foi entregue na 0.22.0; CTF Web entregue na 0.23.0. A aprovação pedagógica pelo usuário/estudantes ainda não foi registrada como concluída.
+27 missões e 54 reforços, sem login. O nivelamento e os certificados continuam relativos aos sete fundamentos. Terminais, processos e políticas são simulações fechadas. Os minigames 1–6 têm implementações educativas e Tower Defense foi entregue na 0.22.0; CTF Web entregue na 0.23.0. A aprovação pedagógica pelo usuário/estudantes ainda não foi registrada como concluída.
